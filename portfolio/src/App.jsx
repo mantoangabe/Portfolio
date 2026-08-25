@@ -18,7 +18,7 @@ const footerLinks = [
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <AppBar position="static">
           <Toolbar>
