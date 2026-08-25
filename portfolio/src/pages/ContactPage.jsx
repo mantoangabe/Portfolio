@@ -7,7 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import bodyshot from "../assets/face.JPG";
+import bodyshot from "../assets/face.jpg";
 
 function ContactPage() {
   return (
