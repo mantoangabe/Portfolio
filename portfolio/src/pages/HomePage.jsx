@@ -7,6 +7,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import weddingImage from "../assets/wedding.JPG";
 
 function HomePage() {
@@ -50,11 +51,21 @@ function HomePage() {
               </Typography>
 
               <Stack direction="row" spacing={2}>
-                <Button variant="contained" size="large">
+                <Button
+                  variant="contained"
+                  size="large"
+                  component={RouterLink}
+                  to="/projects"
+                >
                   View My Work
                 </Button>
 
-                <Button variant="outlined" size="large">
+                <Button
+                  variant="outlined"
+                  size="large"
+                  component={RouterLink}
+                  to="/contact"
+                >
                   Contact Me
                 </Button>
               </Stack>
