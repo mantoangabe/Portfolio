@@ -50,15 +50,16 @@ function HomePage() {
                 BYU MISM April 2028 | Software Developer | IT Support &
                 Troubleshooting | Tech Enthusiast
               </Typography>
-              <div className="calendar-container">
+              <Box sx={{ width: "100%", minWidth: 0, overflow: "hidden" }}>
                 <h2>My Contributions</h2>
                 <GitHubCalendar
                   username="mantoangabe"
-                  blockSize={15}
-                  blockMargin={5}
+                  blockSize={8}
+                  blockMargin={2}
+                  fontSize={10}
                   colorScheme="dark" // or "light"
                 />
-              </div>
+              </Box>
 
               <Stack direction="row" spacing={2}>
                 <Button
