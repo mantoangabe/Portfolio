@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import weddingImage from "../assets/wedding.JPG";
+import { GitHubCalendar } from "react-github-calendar";
 
 function HomePage() {
   return (
@@ -49,6 +50,15 @@ function HomePage() {
                 BYU MISM April 2028 | Software Developer | IT Support &
                 Troubleshooting | Tech Enthusiast
               </Typography>
+              <div className="calendar-container">
+                <h2>My Contributions</h2>
+                <GitHubCalendar
+                  username="mantoangabe"
+                  blockSize={15}
+                  blockMargin={5}
+                  colorScheme="dark" // or "light"
+                />
+              </div>
 
               <Stack direction="row" spacing={2}>
                 <Button
